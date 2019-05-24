@@ -1,0 +1,8 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+Git repositories have a hidden file .git which has all the meta data, that 
+includes different versions and commits the user saves, and all the copies
+of different versions of the file etc. So an normal directory has to be 
+initialized as a git repo.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
