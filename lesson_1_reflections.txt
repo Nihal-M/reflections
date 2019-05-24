@@ -1,0 +1,57 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+Assuming that we have two versions, in which the older one is error free, and the newer one
+that modifies the older one in some way has a bug, we can simply spot the bug by looking at
+the changes made, with the help of diff. Because only the changes could have introduced 
+something wrong in the code.
+
+How could having easy access to the entire history of a file make you a more efficient programmer
+ in the long term?
+
+While writing large pieces of code, it becomes very hard to debug the errors that are introduced
+due to careless mistakes or due to semantic/ syntax errors etc. It would be very nice if we had 
+multiple versions of the code, because we could go back in the history of revisions made to the
+ code, to find a code that is error free, or does not have the bug we want to solve, and we could
+ see what introduced the bug by taking diff of the latest code that has no bug in it, and the 
+ first code after that which introduces the bug. Therefore this simple organization would save you 
+ lots of time in the long run.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do 
+in Git, vs having versions automatically saved, like Google Docs does?
+
+When we choose to manually commit, the user has to constantly keep track of changes and must commit
+them. It can be easy to get carried away, or procrastinate when it comes to commit. If commits are too
+less it reduces your debugging flexibility, and fixing bugs and using version control becomes tough.
+But if you have automatically saved versions, they would just be very illogical, and wouldn't make 
+sense. 
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, 
+while others, like Google Docs, treat each file separately?
+
+A lot of code that people write tends to be modular in nature. The functional blocks are present in separate
+source files, and a driver file uses all of them. So many changes may not affect the other files, but changes in
+name of variables, or something like that may affect all files, and hence all files have to be changed. Therefore
+keeping track of files on individual basis is hectic, and not very easy to revert back to a working copy of repo. 
+This is true in most cases because codes are normally inter-related to each other. Therefore making a change in all 
+files to indicate one logical change in the project, and committing this as a whole makes sense.
+
+How can you use the commands git log and git diff to view the history of files?
+
+type "git log" to show the entire log, type "git log --stat" to also show some statistics, like how many lines were
+added and deleted in each of the files. Use "git diff old_commit_id new_commit_id" to compare the changes b/w commits
+to see what was added and deleted.
+
+How might using version control make you more confident to make changes that could break something?
+
+In large codes, I many times hesitate to make changes, because if I break something, it's gonna be difficut to find the 
+error and fix it. But using version control makes it a lot easier, and I can confidently make changes, with the 
+assurity that I could go back to any previous commit, using git checkout, see the commit that introduced the bug 
+(assuming you have commits for ever logical change), and then just use a git diff to know what caused the problem.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I'm currently working on a fly re-id project, and it has lots of lines of code, and making changes does seem 
+intimidating, especially once the code is working really fine, and the fear of breaking the code, prompts me
+to only make small changes. With version control now, I can have a version that has all the working code, and
+just clean up the code as much as I like, making large changes, and saving logical checkpoints, without the fear
+of breaking anything. This is really efficient way of coding.
