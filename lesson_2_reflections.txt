@@ -40,3 +40,10 @@ When we merge two branches, we have the updated code of both the branches. Lets 
 and by the time you finished your changes the master branch has been further updated, so you merge your changes with the master branch
 to have everything upto-date. 
 
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+It's helpful to have an automatic merging feature that git provides, rather than manually doing all the changes which is v.hectic and time
+consuming. 
+But sometimes eventhough there aren't any merge conflicts, git may introduce semantic errors whiel merging, which won't occur if you 
+manually merge files yourself. 
+
