@@ -26,3 +26,7 @@ version, and create another branch for italian.
 
 Branches are useful whenever you want to have/maintain several independent versions of your software.
 
+Mike Wales says: I create branches whenever I do context switches. ie whenever I add a new feature, or fix a bug, or make any kinds
+of modification to the production level code, I just branch out make the changes, so that my master branch still has production level
+code, while the development branch has all the changes going on.
+
