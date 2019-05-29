@@ -6,3 +6,23 @@ of different versions of the file etc. So an normal directory has to be
 initialized as a git repo.
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The working directory is whatever you have in your local computer, and the repo is the git version control maintaining
+the commits. Staging area helps you stage selected files before comitting them. You need not commit the entire working directory.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+If you have changed multiple files, you can now stage files one set at a time and commit them based on some logical change you've made.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Suppose I want to try out an experiment, but don't really want to break the original code. It's an experiment, and I'm not sure
+if it works. But to people I still want to show the original master branch code until the experiment is done. This is an ideal
+situation when you can create an experiment branch and do all your experiments on that branch. When the experiment is successful
+you can just merge it to the master branch. 
+
+Or lets say you want to have an italian and an english version of your application. You can have the master branch have the english 
+version, and create another branch for italian. 
+
+Branches are useful whenever you want to have/maintain several independent versions of your software.
+
