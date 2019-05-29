@@ -34,3 +34,9 @@ How do the diagrams help you visualize the branch structure?
 
 They help me visualize the reachability of various commits via various branches.
 
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+When we merge two branches, we have the updated code of both the branches. Lets say your branch branches from the master branch,
+and by the time you finished your changes the master branch has been further updated, so you merge your changes with the master branch
+to have everything upto-date. 
+
