@@ -30,3 +30,7 @@ Mike Wales says: I create branches whenever I do context switches. ie whenever I
 of modification to the production level code, I just branch out make the changes, so that my master branch still has production level
 code, while the development branch has all the changes going on.
 
+How do the diagrams help you visualize the branch structure?
+
+They help me visualize the reachability of various commits via various branches.
+
